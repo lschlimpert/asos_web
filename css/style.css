@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #222222;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 15vh;
+  top: 0;
+  left: 0;
+  padding: 3rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+header .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+header .logo-container img {
+  height: 3rem;
+  width: auto;
+}
+
+header .logo-container.white {
+  color: #fcfcfc;
+}
+
+header nav.header-nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+header nav.header-nav.white > ul li a:not(.nav-btn-groupe) {
+  color: #fcfcfc;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main .item-container {
+  width: 25%;
+  height: 100%;
+  cursor: pointer;
+}
+
+main .item-container .item {
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fbfbfb83;
+}
+
+main .item-container .item h3 {
+  margin-bottom: 5rem;
+}
+
+main .item-container .item:hover h2, main .item-container .item:hover h3 {
+  color: #fcfcfc;
+}
+
+main .item-container .item:hover .btn-container button {
+  border: 1px solid #fcfcfc;
+  background: #fcfcfc;
+  color: #222222;
+}
+
+main .item-container .item:hover .btn-container span {
+  display: inline-block;
+}
+
+main .item-container .item .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+main .item-container .item .btn-container button {
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  border-radius: 3.5rem;
+  border: 1px solid #222222;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+main .item-container .item .btn-container button i {
+  -webkit-transform: scale(1.8, 1);
+          transform: scale(1.8, 1);
+}
+
+main .item-container .item .btn-container span {
+  color: #fcfcfc;
+  display: none;
+}
+
+.item-container:nth-of-type(1):hover .item {
+  background: #db3b86a1;
+}
+
+.item-container:nth-of-type(2):hover .item {
+  background: #7eb31488;
+}
+
+.item-container:nth-of-type(3):hover .item {
+  background: #27bba286;
+}
+
+.item-container:nth-of-type(4):hover .item {
+  background: #ee732c8e;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 15vh;
+  bottom: 0;
+  left: 0;
+  padding: 3rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #222222;
+  height: 3.5rem;
+  width: auto;
+  border-radius: 1.75rem;
+}
+
+footer nav ul li {
+  height: 3rem;
+  width: 3.5rem;
+}
+
+footer nav ul li a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer nav.white {
+  color: #fcfcfc;
+}
+
+footer nav.white ul {
+  border: 1px solid #fcfcfc;
+}
+
+footer small.white {
+  color: #fcfcfc;
+}
+
+section#optimisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+section#optimisation h4 {
+  font-size: 7rem;
+}
+
+section#optimisation h5 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+section#optimisation h5 a {
+  text-decoration: underline;
+}
+
+header.hidden, main.hidden,
+footer.hidden, section#optimisation.hidden {
+  visibility: hidden;
+}
+/*# sourceMappingURL=style.css.map */
